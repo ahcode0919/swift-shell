@@ -8,8 +8,8 @@
 import XCTest
 
 class ShellTests: XCTestCase {
-    func testShell() {
-        let test = Shell.test()
+    func testExecute() throws {
+        let test = try Shell.execute(.echo, args: ["Test"])
         XCTAssertEqual(test, "Test")
     }
 }
