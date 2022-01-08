@@ -6,7 +6,7 @@
 //
 
 /// Shell commands
-enum Command {
+public enum Command {
     case cp
     case custom(String)
     case echo
@@ -20,7 +20,7 @@ enum Command {
     case xcodeselect
     case xcrun
     
-    var string: String {
+    public var string: String {
         switch self {
         case .custom(let command):
             return command

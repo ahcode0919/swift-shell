@@ -8,7 +8,7 @@
 import Foundation
 
 /// Execute shell commands
-class Shell {
+public class Shell {
     
     /// Execute non-blocking shell commands
     /// - Parameters:
@@ -16,7 +16,7 @@ class Shell {
     ///   - args: arguments to pass to command
     /// - Throws: Error on failure
     /// - Returns: Output of shell command
-    static func execute(_ command: Command, args: [String]) throws -> String? {
+    public static func execute(_ command: Command, args: [String]) throws -> String? {
         let process = Process()
         let pipe = Pipe()
         
