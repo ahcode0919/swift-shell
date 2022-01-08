@@ -24,6 +24,8 @@ public enum Command {
         switch self {
         case .custom(let command):
             return command
+        case .xcodeselect:
+            return "xcode-select"
         default:
             return "\(self)"
         }
