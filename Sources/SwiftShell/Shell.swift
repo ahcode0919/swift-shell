@@ -4,7 +4,7 @@
 //
 //  Created by Aaron Hinton on 12/28/21.
 //
-
+import Fast
 import Foundation
 
 /// Execute shell commands
@@ -26,7 +26,6 @@ public class Shell {
         process.launchPath = "/usr/bin/env"
         
         try process.run()
-        process.waitUntilExit()
         
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         
