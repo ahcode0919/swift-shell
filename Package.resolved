@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Fast",
+        "repositoryURL": "https://github.com/ahcode0919/Fast",
+        "state": {
+          "branch": null,
+          "revision": "f9d504fd58da805fbe6bcf6fc53196df0d412c90",
+          "version": "0.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
